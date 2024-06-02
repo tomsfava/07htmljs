@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário dos números, um maior que o outro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Descubra se é maior</h1>
+        <p>Será que número B é maior que número A?</p>
+        <p>Selecione dois números e descubra se o segundo deles é maior do que o primeiro, além de alguns dados sobre a relação desses números.</p>
+        <form id="formulario">
+            <input id="A" type="number" placeholder="número A">
+            <input id="B" type="number" placeholder="número B">
+            <button id="botão" type="submit">É maior?</button>
+        </form>
+        <p id="mensagemSucesso">PARABÉNS! B É MAIOR QUE A!</p>
+        <p id="mensagemErro">OPS, B não é maior que A...tente outra vez!</p>
+        <table id="tabela">
+            <tr><td id="a1">número B</td><td id="b1">número A</td></tr>
+            <tr><td>Operação</td><td>Resultado</td></tr>
+            <tr><td id="a2">B-A</td><td id="b2">rB-A</td></tr>
+            <tr><td id="a3">B*A</td><td id="b3">rB*A</td></tr>
+            <tr><td id="a4">B/A</td><td id="b4">rB/A</td></tr>
+            <tr><td id="a5">B+A</td><td id="b5">rB+A</td></tr>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

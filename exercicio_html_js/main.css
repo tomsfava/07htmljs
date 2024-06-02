@@ -1,0 +1,37 @@
+body {
+    background-color: palevioletred;
+}
+
+form input, form button {
+    display: flex;
+    margin: 8px 0px;
+}
+
+form button {
+    margin: 16px 0px;
+    font-size: 22px;
+}
+
+td {
+    border: 1px solid green;
+    background-color: #4ec9e7;
+}
+
+#mensagemSucesso {
+    background-color: green ;
+    color:#4ec9e7;
+    font-weight: bolder;
+    font-size: 18px;
+    display:none;
+}
+
+#mensagemErro {
+    background-color: red;
+    font-weight: bolder;
+    font-size: 18px;
+    display: none;
+}
+
+#tabela {
+    display:none;
+}

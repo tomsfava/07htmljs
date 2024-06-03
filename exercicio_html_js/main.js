@@ -11,6 +11,8 @@ const b2 = document.getElementById('b2');
 const b3 = document.getElementById('b3');
 const b4 = document.getElementById('b4');
 const b5 = document.getElementById('b5');
+const valorA = parseFloat(numeroA.value);
+const valorB = parseFloat(numeroB.value);
 
 form.addEventListener('submit', function (e){
     e.preventDefault();
@@ -30,7 +32,7 @@ form.addEventListener('submit', function (e){
         b2.innerHTML = `${(numeroB.value)-(numeroA.value)}`;
         b3.innerHTML = `${(numeroA.value)*(numeroB.value)}`;
         b4.innerHTML = `${(numeroB.value)/(numeroA.value)}`;
-        b5.innerHTML = `${(numeroA.value)+(numeroB.value)}`;
+        b5.innerHTML = `${(valorA)+(valorB)}`;
     
         tabela.style.display = 'block'
         mensagemErro.style.display = 'none'

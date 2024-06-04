@@ -16,6 +16,9 @@ const valorB = parseFloat(numeroB.value);
 
 form.addEventListener('submit', function (e){
     e.preventDefault();
+
+    console.log(valorA);
+    console.log(valorB);
    
     const mensagemErro = document.getElementById('mensagemErro')
     const mensagemSucesso = document.getElementById('mensagemSucesso');

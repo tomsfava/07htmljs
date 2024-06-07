@@ -11,18 +11,18 @@ const b2 = document.getElementById('b2');
 const b3 = document.getElementById('b3');
 const b4 = document.getElementById('b4');
 const b5 = document.getElementById('b5');
-const valorA = parseFloat(numeroA.value);
-const valorB = parseFloat(numeroB.value);
 
 form.addEventListener('submit', function (e){
     e.preventDefault();
-
-    console.log(valorA);
-    console.log(valorB);
-   
+    
+    
+    
     const mensagemErro = document.getElementById('mensagemErro')
     const mensagemSucesso = document.getElementById('mensagemSucesso');
     const tabela = document.getElementById('tabela');
+    const valorA = parseFloat(numeroA.value);
+    const valorB = parseFloat(numeroB.value);
+
     if ((numeroB.value)>(numeroA.value)){
         console.log(numeroB.value);
         mensagemSucesso.style.display = 'block';
@@ -32,9 +32,9 @@ form.addEventListener('submit', function (e){
         a3.innerHTML = `${numeroA.value}*${numeroB.value}`;
         a4.innerHTML = `${numeroB.value}/${numeroA.value}`;
         a5.innerHTML = `${numeroA.value}+${numeroB.value}`;
-        b2.innerHTML = `${(numeroB.value)-(numeroA.value)}`;
-        b3.innerHTML = `${(numeroA.value)*(numeroB.value)}`;
-        b4.innerHTML = `${(numeroB.value)/(numeroA.value)}`;
+        b2.innerHTML = `${(valorB)-(valorA)}`;
+        b3.innerHTML = `${(valorB)*(valorA)}`;
+        b4.innerHTML = `${(valorB)/(valorA)}`;
         b5.innerHTML = `${(valorA)+(valorB)}`;
     
         tabela.style.display = 'block'
